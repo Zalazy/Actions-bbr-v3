@@ -1118,7 +1118,7 @@ install_latest_version() {
     profile_label=$(get_profile_label "$profile")
 
     echo -e "\033[36m正在从 GitHub 获取 ${profile_label} 最新版本信息...\033[0m"
-    BASE_URL="https://gh-proxy.org/https://api.github.com/repos/byJoey/Actions-bbr-v3/releases"
+    BASE_URL="https://ghfast.top/https://api.github.com/repos/byJoey/Actions-bbr-v3/releases"
     RELEASE_DATA=$(gh_api_get "$BASE_URL")
     if [[ -z "$RELEASE_DATA" ]]; then
         echo -e "\033[31m从 GitHub 获取版本信息失败。请检查网络连接或 API 状态。\033[0m"
