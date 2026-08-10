@@ -5,7 +5,7 @@
 脚本入口：
 
 ```bash
-https://raw.githubusercontent.com/Zalazy/Actions-bbr-v3/refs/heads/main/install.sh
+bash <(curl -fsSL https://gh-proxy.org/https://raw.githubusercontent.com/Zalazy/Actions-bbr-v3/refs/heads/main/install.sh)
 ```
 
 首次运行后脚本会自动安装联网快捷命令，后续可直接运行：
@@ -87,7 +87,7 @@ linux-7.1.y -> patches/bbrv3-linux-7.1.patch
 ## 安装最新版
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/byJoey/Actions-bbr-v3/main/install.sh)
+bash <(curl -fsSL https://gh-proxy.org/https://raw.githubusercontent.com/Zalazy/Actions-bbr-v3/refs/heads/main/install.sh)
 ```
 
 首次运行后也可以直接输入：
@@ -118,7 +118,7 @@ b
 
 ```bash
 export GITHUB_TOKEN=你的 GitHub Token
-bash <(curl -fsSL https://raw.githubusercontent.com/byJoey/Actions-bbr-v3/main/install.sh)
+bash <(curl -fsSL https://gh-proxy.org/https://raw.githubusercontent.com/Zalazy/Actions-bbr-v3/refs/heads/main/install.sh)
 ```
 
 ## 指定版本安装
@@ -351,7 +351,7 @@ CVE-2026-31431 对应的 AEAD userspace 接口在新构建内核中由内核配�
 
 ```bash
 command -v python3 >/dev/null 2>&1 || (sudo apt update && sudo apt install -y python3)
-curl -fsSL -o cve_2026_31431_detector.py https://raw.githubusercontent.com/byJoey/Actions-bbr-v3/main/cve_2026_31431_detector.py
+curl -fsSL -o cve_2026_31431_detector.py https://gh-proxy.org/https://raw.githubusercontent.com/byJoey/Actions-bbr-v3/main/cve_2026_31431_detector.py
 chmod +x cve_2026_31431_detector.py
 sudo python3 cve_2026_31431_detector.py
 ```
@@ -380,27 +380,3 @@ sudo python3 cve_2026_31431_detector.py
 ```
 
 脚本会卸载由本项目安装的 `joeyblog` 内核包，并更新引导配置。卸载后建议重启。
-
-## 反馈
-
-博客：
-
-[JoeyBlog](https://joeyblog.net)
-
-反馈群组：
-
-[Telegram Feedback Group](https://t.me/+ft-zI76oovgwNmRh)
-
-## 免责声明
-
-内核升级有风险。安装前建议确认 VPS 控制台、救援模式或旧内核启动项可用。使用本项目构建或安装的内核造成的系统启动失败、网络异常或数据损失，由使用者自行承担。
-
-## Star History
-
-<a href="https://star-history.com/#byJoey/Actions-bbr-v3&Timeline">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=byJoey/Actions-bbr-v3&type=Timeline&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=byJoey/Actions-bbr-v3&type=Timeline" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=byJoey/Actions-bbr-v3&type=Timeline" />
- </picture>
-</a>
